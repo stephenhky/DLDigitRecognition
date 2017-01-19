@@ -14,6 +14,7 @@ public class MNISTFactory {
     public static int outputNum = 10;
     public static int batchSize = 128;
     public static int rngSeed = 123;
+    public static int numEpochs = 15;
 
     public static DataSetIterator getMNISTTrainDataIterator() throws IOException {
         return new MnistDataSetIterator(batchSize, true, rngSeed);
